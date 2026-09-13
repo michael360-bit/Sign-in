@@ -1,0 +1,51 @@
+body {
+    width: 100%;
+    /* 1. Make the gradient background 4x the size of the container */
+    background: linear-gradient(-45deg, #30AFFF, #92EEFF, #D8FFC5, #C4F7CA);
+    background-size: 400% 400%;
+
+    /* 2. Attach the animation (takes 15 seconds, loops infinitely) */
+    animation: gradientMovement 15s ease infinite;
+}
+
+/* 3. Define the animation path by shifting the background position */
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    } }
+
+.mid{
+    background-color: #e73c7e;
+    border-radius: ;
+}    
+
+.container{
+    width: 700px;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+
+}
+
+form{
+    background-color: aliceblue;
+    border-radius:15px ;
+}
+
+.form-control:hover{
+    border-color: #30AFFF;
+
+}
+
+.form-control:focus {
+    border-color: #30AFFF;
+    box-shadow: none;
+    outline: none; }

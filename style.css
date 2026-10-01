@@ -1,14 +1,9 @@
 body {
-    width: 100%;
-    /* 1. Make the gradient background 4x the size of the container */
     background: linear-gradient(-45deg, #30AFFF, #92EEFF, #D8FFC5, #C4F7CA);
     background-size: 400% 400%;
-
-    /* 2. Attach the animation (takes 15 seconds, loops infinitely) */
     animation: gradientMovement 15s ease infinite;
 }
 
-/* 3. Define the animation path by shifting the background position */
 @keyframes gradientMovement {
     0% {
         background-position: 0% 50%;
@@ -28,11 +23,9 @@ body {
 }    
 
 .container{
-    width: 700px;
     height: 100vh;
     justify-content: center;
     align-content: center;
-
 }
 
 form{
